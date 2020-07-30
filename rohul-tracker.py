@@ -5,13 +5,16 @@ import pandas as pd
 from datetime import date
 from bs4 import BeautifulSoup
 
+r = requests.get('https://corona.rokanhulukab.go.id')
+soup = BeautifulSoup(r.content, 'html.parser')
+
 with open('rohul.csv', 'a+') as csv_files:
     tr_kecamatan = soup.find_all('tr')[2:]
     fieldnames = ['tanggal', 'Kecamatan', '(ODP) Proses Pemantauan', '(ODP) Selesai Pemantauan', '(PDP) Masih Dirawat', 
                   '(PDP) Pulang dan Sehat', '(Positif) Dirawat', '(Positif) Sembuh', '(Positif) Meninggal']
     writer = csv.DictWriter(csv_files, fieldnames=fieldnames)
     # Ekstraksi per kecamatan
-    writer.writeheader()
+    # writer.writeheader()
     for tr in tr_kecamatan:
         temp = {}
         temp['tanggal'] = date.today()
