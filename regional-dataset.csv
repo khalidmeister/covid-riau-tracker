@@ -1,4 +1,4 @@
-Tanggal,Wilayah,(ODP) Sedang Pemantauan,(ODP) Selesai Pemantauan,(PDP) Sedang Dirawat,(PDP) Sembuh,(PDP) Meninggal,(Positif) Sedang Dirawat,(Positif) Sembuh,(Positif) Meninggal
+tanggal,wilayah,(Spesimen) Total Yang Diperiksa,(Spesimen) Jumlah Orang Yang Diperiksa,(Spesimen) Positif,(Suspek) Isolasi Mandiri,(Suspek) Isolasi di RS,(Suspek) Sembuh,(Suspek) Meninggal,(Positif) Isolasi Mandiri,(Positif) Isolasi di RS,(Positif) Sembuh,(Positif) Meninggal
 2020-07-30,Pekanbaru,446,366,6,353,34,7,0,4,37,119,6
 2020-07-30,Dumai,168,147,0,358,1,1,0,3,2,32,0
 2020-07-30,Bengkalis,21,16,0,31,2,3,0,0,1,19,1
