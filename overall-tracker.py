@@ -26,7 +26,7 @@ with open('riau-dataset.csv', 'a+') as csv_file:
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     c = 1
     temp = {}
-    writer.writeheader()
+    # Cukup Sekali Aja Kalau Gaada Kolom writer.writeheader()
     for tabel in soup.find_all('table'):
         temp['tanggal'] = date.today()
         for data in tabel.find_all('td'):
